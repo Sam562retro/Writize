@@ -17,7 +17,7 @@ connection();
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: false}));
 
-res.get('/', (req, res) => {
+app.get('/', (req, res) => {
     res.send("Helloooo")
 })
 
