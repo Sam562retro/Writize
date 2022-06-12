@@ -17,6 +17,9 @@ connection();
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: false}));
 
+res.get('/', (req, res) => {
+    res.send("Helloooo")
+})
 
 //********* listening to port ********
 app.listen(3000);
